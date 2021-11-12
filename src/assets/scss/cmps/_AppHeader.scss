@@ -1,0 +1,100 @@
+.app-header {
+  header {
+    margin-top: 25px;
+    padding: 0 25px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h3 {
+        font-weight: bold;
+        font-size: 1.9rem;
+      }
+
+      img {
+        width: 1.7rem;
+      }
+
+      p {
+        font-size: 14px;
+        color: #808080d6;
+      }
+
+      .border {
+        width: 110%;
+        border: 1px solid #c2c2c236;
+        margin-left: 60px;
+      }
+    }
+
+    section {
+      article {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          font-weight: bold;
+          font-size: 1.7rem;
+          margin-top: 5px;
+        }
+        h2 {
+          font-weight: bold;
+          font-size: 2rem;
+          letter-spacing: 1px;
+        }
+      }
+      aside {
+        display: flex;
+        margin-top: 5px;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+    }
+  }
+
+  nav {
+    padding: 25px 0;
+    border-bottom: 1.5px solid #80808033;
+    a {
+      padding: 25px 30px;
+      color: #808080cc;
+      font-weight: bold;
+      letter-spacing: -0.2px;
+    }
+    .active-nav {
+      color: #005390de;
+      border-bottom: 1.5px solid #005390de;
+    }
+  }
+
+  .btns {
+    margin: 25px 0 15px 0;
+    height: 30px;
+    button {
+      all: unset;
+
+      cursor: pointer;
+      padding: 0 13px;
+      font-weight: bold;
+      color: #000000b3;
+      letter-spacing: 0.3px;
+      transition: 0.2s;
+      &:focus {
+        transition: 0.2s;
+        padding-bottom: 10px;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.459);
+      }
+
+      &:hover {
+        color: #005390de;
+      }
+    }
+  }
+}
